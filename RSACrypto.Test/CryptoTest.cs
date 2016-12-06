@@ -16,6 +16,7 @@ namespace RSACrypto.Test
 
             for (int i = 0; i < 100; i++)
             {
+
                 var plainText = crypto.GetRandomString();
                 var cipher = crypto.Encrypt(publicKey, plainText);
                 var decrypted = crypto.Decrypt(privateKey, cipher);
